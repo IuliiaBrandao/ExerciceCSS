@@ -1,47 +1,86 @@
-
 <body>
-    
-<style>
-    form {
-        font-family: "lato" sans-serif;
-        width: 400px;
-        margin-top: 100px;
-        margin: auto; 
-        }
-</style>
-<form action="" method="post">
 
-    <label for="nom">Nom</label>
-    
-    <input type="text" name="nom" id="nom" required>
-    
-    <label for="prenom">Prénom</label>
-    
-    <input type="text" name="prenom" id="prenom" required>
-    
-    <fieldset>
-    
-    <legend>Adresse</legend>
-    
-    <label for="rue">rue</label>
-    
-    <input type="text" name="rue" id="rue">
-    
-    <label for="num">Numéro</label>
-    
-    <input type="number" name="num" id="num">
-    
-    <label for="cp">Code Postal</label>
-    
-    <input type="number" name="cp" id="cp">
-    
-    <label for="loc">Localité</label>
-    
-    <input type="text" name="loc" id="loc">
-    
-    </fieldset>
-    
-    <input type="submit" value="Envoyer">
-    
+    <style>
+        form {
+            font-family: "lato" sans-serif;
+            width: 400px;
+            margin-top: 100px;
+            margin: auto;
+
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+
+        }
+
+        input {
+            border: black 1px solid;
+            border-radius: 5%;
+            width: 200px;
+            margin: 5px;
+
+        }
+
+        label {
+            width: 100px;
+
+            display: inline-block;
+        }
+
+        input [type="submit"] {
+            width: 400px;
+            background-color: grey;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input [type="submit"]:hover {
+            background-color: blueviolet;
+        }
+
+        input :focus {
+            border: solid;
+        }
+    </style>
+    <form action="" method="post">
+
+        <label for="nom">Nom</label>
+
+        <input type="text" name="nom" id="nom" required>
+
+        <label for="prenom">Prénom</label>
+
+        <input type="text" name="prenom" id="prenom" required>
+
+        <fieldset>
+
+            <legend>Adresse</legend>
+
+            <label for="rue">rue</label>
+
+            <input type="text" name="rue" id="rue">
+
+            <label for="num">Numéro</label>
+
+            <input type="number" name="num" id="num">
+
+            <label for="cp">Code Postal</label>
+
+            <input type="number" name="cp" id="cp">
+
+            <label for="loc">Localité</label>
+
+            <input type="text" name="loc" id="loc">
+
+        </fieldset>
+
+        <input type="submit" value="Envoyer">
+
     </form>
+    <img src="data:image/jpeg;base64,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"
+        alt="paysage.jpeg">
+
 </body>
