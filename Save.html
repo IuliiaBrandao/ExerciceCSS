@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        main {
+            display: flex;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        header,
+        footer {
+            height: 200px;
+            background: red;
+        }
+section {
+    width: 33.33%;
+    height: 600px;
+    background-color: blueviolet;
+    
+}
+h2 {
+    padding: 0;
+    margin: 0;
+}
+        @media (max-width: 800px) {
+            main {
+                flex-direction: column;
+            }
+
+            section {
+                width: 100%;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+    <main>
+        <section>
+            <h2>SECTION</h2>
+        </section>
+        <section style="background-color: rgb(88, 74, 88);">
+            <h2>SECTION</h2>
+        </section>
+        <section>
+            <h2>SECTION</h2>
+        </section>
+    </main>
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+    </head>
+
+    <body>
